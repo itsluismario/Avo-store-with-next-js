@@ -2,9 +2,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@database": [
-        "database/db.ts"
-      ]
+      "@*": [ "./*" ]
     },
     "target": "es6",
     "lib": [
