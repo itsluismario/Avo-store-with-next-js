@@ -6,7 +6,7 @@
         "database/db.ts"
       ]
     },
-    "target": "es2016",
+    "target": "es6",
     "lib": [
       "dom",
       "dom.iterable",
@@ -32,5 +32,5 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/api/index.tsx.jsdatabase/db.tsb.jsdatabase/data.tsa.js"  ]
+  ]
 }
