@@ -15,7 +15,6 @@ const Home = () => {
 
     return (
         <div>
-            <Navbar />
             <h1>itsluismario</h1>
             {productList.map(product => (
                 <div>{product.image}</div>
