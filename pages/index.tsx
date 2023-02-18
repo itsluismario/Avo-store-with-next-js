@@ -1,26 +1,26 @@
 import React, { useEffect, useState } from "react";
 import Navbar from '../components/Navbar/Navbar';
+import ProductList from '../components/ProductList/ProductList'
 
 
-const Home = () => {
+const HomePage = () => {
     const [productList, setProductList ] = useState<TProduct[]>([])
 
+    
     useEffect(() => {
         window.fetch('/api/avo')
         .then((response) => response.json())
-        .then(({data, lenght}) => {
-            setProductList(data)
+        .then(({data}) => {
+        setProductList(data)
         })
     }, [])
 
     return (
         <div>
-            <h1>itsluismario</h1>
-            {productList.map(product => (
-                <div>{product.image}</div>
-            ))}
+            <h1>🥑 Está muy guay</h1>
+            <ProductList products={productList}/>
         </div>
     );
 };
 
-export default Home;
+export default HomePage;
