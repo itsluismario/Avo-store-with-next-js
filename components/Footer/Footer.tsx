@@ -20,7 +20,7 @@ const Footer = () => (
             <List>
               <List.Item>
                 <Link href="/about">
-                  <a>Conoce más</a>
+                  Conoce más
                 </Link>
               </List.Item>
             </List>
@@ -30,29 +30,27 @@ const Footer = () => (
             <List>
               <List.Item>
                 <Link href="/">
-                  <a>Todos los productos</a>
+                  Todos los productos
                 </Link>
               </List.Item>
             </List>
           </Grid.Column>
           <Grid.Column width={7}>
-            <Header as="h4">Hecho para</Header>
+            <Header as="h4">Hecho por</Header>
             <p>
-              <a href="https://platzi.com/">Platzi y su curso de Next.JS</a> de
-              Platzi dictado por{' '}
-              <a href="https://twitter.com/jonalvarezz">@jonalvarezz</a>
+              <a href="https://itsluismario.com/">itsluismario.com</a>
             </p>
             <List horizontal style={{ display: 'flex' }}>
               <List.Item
                 icon="twitter"
                 style={{ display: 'flex' }}
-                content={<a href="https://twitter.com/jonalvarezz">Twitter</a>}
+                content={<a href="https://twitter.com/itsluismario">Twitter</a>}
               />
               <List.Item
                 icon="github"
                 style={{ display: 'flex' }}
                 content={
-                  <a href="https://github.com/jonalvarezz/platzi-nextjs">
+                  <a href="https://github.com/itsluismario/next-js">
                     GitHub
                   </a>
                 }
