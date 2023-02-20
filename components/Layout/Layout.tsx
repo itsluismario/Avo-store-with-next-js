@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '@components/Navbar/Navbar' 
+import { Footer } from '@components/Footer/Footer';
 import { Container } from 'semantic-ui-react'
 
 type Props = {
@@ -14,7 +15,7 @@ const Layout: React.FC<Props> = ({ children }) => {
         <Container as='main'>
           { children }
         </Container>
-        <footer>This is a footer</footer>
+        <Footer/>
     </div>
   )
 }
