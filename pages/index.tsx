@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
-import Navbar from '../components/Navbar/Navbar';
-import ProductList from '../components/ProductList/ProductList'
+import React, { useEffect, useState } from "react"
+import ProductList from '@components/ProductList/ProductList'
 
 
 const HomePage = () => {

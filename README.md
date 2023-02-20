@@ -12,7 +12,7 @@
   </a>
 </p>
 
-[Curso de Next.js](https://platzi.com/cursos/next-2020/) dictado por [@jonalvarezz](https://twitter.com/jonalvarezz) para [Platzi](https://platzi.com)
+[Curso de Next.js](https://platzi.com/cursos/next-2020/) hecho por [@itsluismario](https://twitter.com/itsluismario) 
 
 * [Guía rápida](#-gu%C3%ADa-rápida)
 * [Logros](#-logros)
@@ -50,11 +50,5 @@
 1. Configura path aliases
 1. Crea páginas y componentes UI para el sitio.
 1. Crea Store simple usando Context
-
-
-### 🐞 Encontraste un error o mejora?
-Ayuda a otros estudiantes con eso que acabas de descubrir que haría este curso y respositorio mucho mejor.
-* En [Issues](https://github.com/jonalvarezz/platzi-optimizacion-web/issues/new) puedes reportar errores, agregar sugerencias y comentarios.
-* Por su parte, los [Pull Request](https://github.com/jonalvarezz/platzi-optimizacion-web/pulls) siempre estarán abiertos para recibir mejoras puntuales.
 
 Happy hacking!
