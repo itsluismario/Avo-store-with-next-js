@@ -8,7 +8,7 @@ const HeaderOne = () => (
     Guay!
     <style jsx global>{`
     .ui.huge.center.aligned.header {
-        padding-bottom: 40px;
+        margin-bottom: 40px;
     }
     `}</style>
     </Header>

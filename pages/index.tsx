@@ -20,7 +20,7 @@ const HomePage = () => {
                 if (error instanceof Error) message = error.message
             }
             
-        }, 1000)
+        }, 500)
     },[]
     );
 
