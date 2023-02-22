@@ -1,5 +1,6 @@
-import React from 'react'
-import { Item, Label } from 'semantic-ui-react'
+import React from 'react';
+import { Item, Label } from 'semantic-ui-react';
+import ProductAttributes from './ProductAttributes';
 
 type ProductSummaryProps = {
   product: TProduct
@@ -26,7 +27,7 @@ const ProductSummary = ({product}: ProductSummaryProps) => {
         </Item.Content>
       </Item>
     </Item.Group>
-    {/* <ProductAttributes {...product.attributes} /> */}
+    <ProductAttributes {...product.attributes} />
   </>
   )
 }

@@ -27,8 +27,8 @@ const HomePage = () => {
 
     return (
         <div>
-            {loading && <Loading />}
             <HeaderOne/>
+            {loading && <Loading />}
             <ProductList products={productList}/>
         </div>
     );
