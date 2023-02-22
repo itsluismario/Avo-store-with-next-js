@@ -26,7 +26,6 @@ const HomePage = () => {
 
     return (
         <div>
-            <h1>🥑 Está muy guay</h1>
             {loading && <Loading />}
             <ProductList products={productList}/>
         </div>

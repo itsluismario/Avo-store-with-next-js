@@ -1,24 +1,34 @@
-import React from 'react';
-import Link from 'next/link';
+import React, { Component } from 'react'
+import { Input, Menu, Container } from 'semantic-ui-react'
 
-const Navbar = () => {
-  return (
-    <nav>
-        <ul>
-          <li>
-            <Link href='/'>
-                Home
-            </Link>
-          </li>
-            
-            <li>
-              <Link href='/about'>
-              About
-              </Link>
-            </li>
-        </ul>
-    </nav>
-  )
+export default class Navbar extends Component {
+  state = { activeItem: 'home' }
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+  render() {
+    const { activeItem } = this.state
+
+    return (
+      <Menu secondary>
+          <Menu.Item
+            name='🥑 Avo Store'
+            active={activeItem === 'home'}
+            onClick={this.handleItemClick}
+            href={`/`}
+          />        
+        <Menu.Menu position='right'>
+        <Menu.Item
+            name='🛒 Cart'
+            active={activeItem === 'friends'}
+            onClick={this.handleItemClick}
+          />
+        </Menu.Menu>
+        <style jsx global>{`
+        .ui.secondary.menu {
+          font-size: 1.1rem;
+          padding-top: 15px;
+        }
+      `}</style>
+      </Menu>
+    )
+  }
 }
-
-export default Navbar
