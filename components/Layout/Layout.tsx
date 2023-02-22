@@ -17,7 +17,6 @@ const Layout: React.FC<Props> = ({ children }) => {
         
         <Container as='main' text>
         <Navbar/>
-        <HeaderOne/>
           { children }
         </Container>
         <Footer/>

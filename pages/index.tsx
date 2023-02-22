@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react"
-import ProductList from '@components/ProductList/ProductList'
+import React, { useEffect, useState } from "react";
+import ProductList from '@components/ProductList/ProductList';
 import { Loading } from "@components/Loading/Loading";
+import HeaderOne from "@components/Header/Header";
 
 const HomePage = () => {
     const [productList, setProductList ] = useState<TProduct[]>([])
@@ -27,6 +28,7 @@ const HomePage = () => {
     return (
         <div>
             {loading && <Loading />}
+            <HeaderOne/>
             <ProductList products={productList}/>
         </div>
     );
