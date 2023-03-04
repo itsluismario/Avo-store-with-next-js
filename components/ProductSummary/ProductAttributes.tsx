@@ -2,9 +2,7 @@ import React from 'react'
 import { Header, Divider, Table } from 'semantic-ui-react'
 
 const ProductAttributes = ({description, ...otherAttritbutes}: TProductAttributes) => {
-    console.log(description);
-    console.log(otherAttritbutes);
-    
+
     return (
     <section className='container'>
         <Header as="h3">About this avocado</Header>
@@ -19,12 +17,11 @@ const ProductAttributes = ({description, ...otherAttritbutes}: TProductAttribute
 
             <Table.Body>
                 {Object.keys(otherAttritbutes).map(key => (
-                    <Table.Row>
+                    <Table.Row key={key}>
                         <Table.Cell className='attr-name'>{key}</Table.Cell>
                         <Table.Cell>{otherAttritbutes[key as keyof typeof otherAttritbutes]}</Table.Cell>
                     </Table.Row>
                 ))}
-                
             </Table.Body>
         </Table>
         <style jsx>{`
@@ -33,7 +30,6 @@ const ProductAttributes = ({description, ...otherAttritbutes}: TProductAttribute
       }
     `}</style>
     </section>
-
   )
 }
 
