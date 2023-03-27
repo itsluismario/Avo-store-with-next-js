@@ -1,34 +1,50 @@
-import React, { Component } from 'react'
-import { Input, Menu, Container } from 'semantic-ui-react'
 
-export default class Navbar extends Component {
-  state = { activeItem: 'home' }
-  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
-  render() {
-    const { activeItem } = this.state
 
-    return (
-      <Menu secondary>
+import React, { useContext } from 'react'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { Menu, Container } from 'semantic-ui-react'
+
+import { useCart } from '@store/Cart'
+
+const Navbar = () => {
+  const { pathname } = useRouter()
+  const { count: cartCount } = useCart()
+
+
+  
+  return (
+    <Menu size="huge"   secondary >
+      <Container text>
+        <Link href="/" >
           <Menu.Item
-            name='🥑 Avo Store'
-            active={activeItem === 'home'}
-            onClick={this.handleItemClick}
-            href={`/`}
-          />        
-        <Menu.Menu position='right'>
-        <Menu.Item
-            name='🛒 Cart'
-            active={activeItem === 'friends'}
-            onClick={this.handleItemClick}
-          />
+            title="Inicio | Todos los productos"
+          >
+            Avo Store
+          </Menu.Item>
+        </Link>
+        <Menu.Menu position="right">
+          <Link href="/cart" >
+            <Menu.Item
+            title="Carrito"
+            >
+              <p>Canasta ({cartCount})</p>
+            </Menu.Item>
+          </Link>
         </Menu.Menu>
-        <style jsx global>{`
-        .ui.secondary.menu {
-          font-size: 1.1rem;
-          padding-top: 15px;
+      </Container>
+      <style jsx global>{`
+        .ui.menu.huge {
+          background-color: #104c34; 
+          
+        }
+        .ui.menu .item {
+          color: #FFFF;
+          font-size: 17px;
         }
       `}</style>
-      </Menu>
-    )
-  }
+    </Menu>
+  )
 }
+
+export default Navbar

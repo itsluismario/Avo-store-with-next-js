@@ -24,7 +24,7 @@ const ProductSummary = ({product}: ProductSummaryProps) => {
           </Item.Description>
           <Item.Extra>
             {/* <AddToCart product={product} /> */}
-            <AddToCart />
+            <AddToCart product={product}/>
           </Item.Extra>
         </Item.Content>
       </Item>

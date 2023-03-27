@@ -1,6 +1,11 @@
 import { resolve } from 'path'
 import React, { useState } from 'react'
 import { Input, Transition, Icon, Button } from 'semantic-ui-react'
+import { useCart, useCartMutations } from '@store/Cart'
+
+type AddToCartProps = {
+  product: TProduct
+}
 
 const validate = (quantity: number) => {
   let error = ''
@@ -14,12 +19,13 @@ const addToCartRequest = () => {
   })
 }
 
-const AddToCart = () => {
+const AddToCart = ({product}: AddToCartProps) => {
   const [visible, setVisible] = useState(false)
   const [quantity, setQuantity] = useState(1)
   const [error, setError] = useState('')
   const [loading, setLoading] = useState(false)
-
+  const { addToCart } = useCartMutations()
+  
   const handleMinus = () => {
     if( quantity === 1 ){
       setQuantity(1)
@@ -42,7 +48,6 @@ const AddToCart = () => {
   }
 
   const handleSubmit = async () => {
-    console.log(quantity)
     const error = validate(quantity)
     setError(error)
 
@@ -56,6 +61,7 @@ const AddToCart = () => {
       setLoading(true)
       addToCartRequest()
         .then(() => {
+          addToCart(product, quantity)
           setLoading(false)
           setQuantity(quantity)
           setVisible(true)
@@ -69,7 +75,6 @@ const AddToCart = () => {
 
 return (
   <>
-
     <Input
         type = 'number'
         placeholder='Quantity'
@@ -83,6 +88,7 @@ return (
           content: 'Add to cart',
           onClick: handleSubmit, 
           loading,
+          disabled: loading
         }}
     />
     <Button.Group basic>
