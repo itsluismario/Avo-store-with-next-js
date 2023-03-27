@@ -5,21 +5,24 @@ import { CartItemType } from '@store/Cart'
 
 type CartItemListProps = {
   items: CartItemType[]
+  removeFromCart: (product: TProduct) => void
 }
 
 const CartItemList = ({
   items,
+  removeFromCart
 }: CartItemListProps) => {
 
   const mapCartItemsToItems = (items: CartItemType[]) =>
     items.map((cartItem) => {
-      const { id, name, quantity, price, image } = cartItem
+
+      const { id, name, quantity, price, image, attributes } = cartItem
 
       return {
         childKey: id,
         header: (
           <Item.Header>
-            <Link href={`/product/${id}/`}>
+            <Link href={`/product/${id}/`} legacyBehavior>
               <a>{name}</a>
             </Link>
           </Item.Header>
@@ -33,12 +36,13 @@ const CartItemList = ({
           />
         ),
         meta: `${quantity} x ${price}`,
-        description: 'Some more information goes here....',
+        description: `Taste: ${attributes.taste}`,
         extra: (
           <Button
             basic
             icon="remove"
             floated="right"
+            onClick={() => removeFromCart(cartItem)}
           />
         ),
       }

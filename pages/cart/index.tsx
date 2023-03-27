@@ -10,7 +10,7 @@ const CartPage = () => {
     
     return (
         <>
-        <CartItemList items={items} />
+        <CartItemList items={items} removeFromCart={removeFromCart} />
         <Divider/>
         <CartSummary totalAmount={count}/>
         </>

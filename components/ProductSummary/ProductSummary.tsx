@@ -23,7 +23,6 @@ const ProductSummary = ({product}: ProductSummaryProps) => {
             <Label>{`SKU: ${product.sku}`}</Label>
           </Item.Description>
           <Item.Extra>
-            {/* <AddToCart product={product} /> */}
             <AddToCart product={product}/>
           </Item.Extra>
         </Item.Content>

@@ -1,4 +1,3 @@
-import AddToCart from '@components/ProductSummary/AddToCart'
 import React, { Dispatch, useContext, useReducer } from 'react'
 
 export type CartItemType = TProduct & {quantity: number}
@@ -30,55 +29,54 @@ const CartProvider = ({ children }: { children: React.ReactNode }) => {
 }
 
 
-function cartReducers (
+function cartReducers(
   state: CartState,
-  { type, item, quantity: qty = 1 }: CartAction
-  ) {
+  { item, type, quantity: qtyToAdd = 1 }: CartAction
+) {
+  const existingCartItem = state[item.id]
 
-    const existingCartItem = state[item.id];
-    
-    switch (type) {
-      case 'add': {
-        if (existingCartItem != undefined) {
-          const quantity = existingCartItem.quantity + qty
-          return {
-            ...state,
-            [item.id]: {
-              ...item,
-              quantity,
-            },
-          }
-        }
-  
+  switch (type) {
+    case 'add': {
+      if (existingCartItem != undefined) {
+        const quantity = existingCartItem.quantity + qtyToAdd
         return {
           ...state,
           [item.id]: {
-            ...item,
-            quantity: qty,
+            ...existingCartItem,
+            quantity,
+          },
+          
+        }
+      }
+      return {
+        ...state,
+        [item.id]: {
+          ...item,
+          quantity: qtyToAdd,
+        },
+      }
+    }
+
+    case 'remove': {
+      if (existingCartItem == undefined) {
+        return state
+      }
+
+      const quantity = existingCartItem.quantity - existingCartItem.quantity
+      if (quantity > 0) {
+        return {
+          ...state,
+          [item.id]: {
+            ...existingCartItem,
+            quantity,
           },
         }
       }
-  
-      case 'remove': {
-        if (existingCartItem == undefined) {
-          return state
-        }
-  
-        const quantity = existingCartItem.quantity - 1
-        if (quantity > 0) {
-          return {
-            ...state,
-            [item.id]: {
-              ...existingCartItem,
-              quantity,
-            },
-          }
-        }
 
-        const newCartItems = { ...state }
-        delete newCartItems[item.id]
-        return newCartItems
-      }
+      const newCartItems = { ...state }
+      delete newCartItems[item.id]
+      return newCartItems
+    }
 
     default: {
       throw new Error(`Unhandled action type: ${type}`)

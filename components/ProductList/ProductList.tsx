@@ -9,7 +9,7 @@ type ProductListProps = {
 
 const mapProductsToCards = (products: TProduct[]) =>
   products.map(({ name, id, price, image }) => (
-
+      <Link key={id} href={`/product/${id}`} legacyBehavior>
       <Card
         href={`/product/${id}`}
         as="a"
@@ -17,8 +17,9 @@ const mapProductsToCards = (products: TProduct[]) =>
         image={<Image src={image} width={250} height={250} /> }
         meta={ <Card.Meta style={{ color: 'dimgray' }}>{price}</Card.Meta>}
         key = {id}
+        passHref
       />
-
+      </Link>
   ))
 
 const ProductList = ({ products }: ProductListProps) => (

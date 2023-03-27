@@ -6,6 +6,7 @@ import { useRouter } from 'next/router'
 import { Menu, Container } from 'semantic-ui-react'
 
 import { useCart } from '@store/Cart'
+import ShoppingCart from './ShoppingCart'
 
 const Navbar = () => {
   const { pathname } = useRouter()
@@ -28,7 +29,7 @@ const Navbar = () => {
             <Menu.Item
             title="Carrito"
             >
-              <p>Canasta ({cartCount})</p>
+              <ShoppingCart cartCount={cartCount} name="Cart"/>
             </Menu.Item>
           </Link>
         </Menu.Menu>
