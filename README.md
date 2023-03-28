@@ -8,7 +8,7 @@
 </h1>
 <p align="center">
   <a href="" target="_blank">
-    https://itsluismario-avo.vercel.app/
+    https://next-js-itsluismario.vercel.app/
   </a>
 </p>
 
