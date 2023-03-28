@@ -35,7 +35,7 @@
     yarn dev
     ```
 
-    El sitio estará disponible en http://localhost:3000.
+    El sitio estará disponible en https://next-js-itsluismario.vercel.app/.
 
 
 ### 🚀 Logros
