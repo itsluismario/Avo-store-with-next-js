@@ -21,9 +21,9 @@ const ProductItem = () => {
   }, [id]);
 
   return (        
-      <>
+      <Layout>
       {product == null ? null : <ProductSummary product={product} />}
-      </>
+      </Layout>
     )
 };
 

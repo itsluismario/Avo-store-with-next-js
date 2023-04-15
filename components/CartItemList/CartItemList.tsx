@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { Item, Button, Loader, Message } from 'semantic-ui-react'
+import { Item, Button } from 'semantic-ui-react'
 import { CartItemType } from '@store/Cart'
 
 type CartItemListProps = {

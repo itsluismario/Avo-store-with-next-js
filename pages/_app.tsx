@@ -7,9 +7,7 @@ export default function MyApp({ Component, pageProps }: AppProps) {
     return (
     
         <CartProvider>
-            <Layout>
                 <Component {...pageProps} />
-            </Layout>
         </CartProvider>
     
     )

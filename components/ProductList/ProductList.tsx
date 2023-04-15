@@ -26,6 +26,7 @@ const ProductList = ({ products }: ProductListProps) => (
   <Card.Group itemsPerRow={3} stackable>
     {mapProductsToCards(products)}
   </Card.Group>
+  
 )
 
 export default ProductList
