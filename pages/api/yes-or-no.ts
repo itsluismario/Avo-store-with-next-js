@@ -1,5 +1,4 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
-// import enablePublicAccess from '@cors'
 
 type ResponseData = {
     data: string,

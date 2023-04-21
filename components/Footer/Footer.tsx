@@ -29,7 +29,7 @@ const Footer = () => (
             <Header as="h4" content="Servicios" />
             <List>
               <List.Item>
-                <Link href="/">
+                <Link href="">
                   Todos los productos
                 </Link>
               </List.Item>

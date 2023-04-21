@@ -1,44 +1,53 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
 (() => {
 var exports = {};
-exports.id = 888;
-exports.ids = [888];
+exports.id = "pages/_app";
+exports.ids = ["pages/_app"];
 exports.modules = {
 
-/***/ 3847:
+/***/ "./pages/_app.tsx":
+/*!************************!*\
+  !*** ./pages/_app.tsx ***!
+  \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ MyApp)
-/* harmony export */ });
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
-/* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var semantic_ui_css_semantic_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8158);
-/* harmony import */ var semantic_ui_css_semantic_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_css_semantic_min_css__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _store_Cart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5324);
-
-
-
-function MyApp({ Component , pageProps  }) {
-    return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(_store_Cart__WEBPACK_IMPORTED_MODULE_2__/* .CartProvider */ .Zl, {
-        children: /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx(Component, {
-            ...pageProps
-        })
-    });
-}
-
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ MyApp)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var semantic_ui_css_semantic_min_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! semantic-ui-css/semantic.min.css */ \"./node_modules/semantic-ui-css/semantic.min.css\");\n/* harmony import */ var semantic_ui_css_semantic_min_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(semantic_ui_css_semantic_min_css__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _store_Cart__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @store/Cart */ \"./store/Cart.tsx\");\n\n\n\nfunction MyApp({ Component , pageProps  }) {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(_store_Cart__WEBPACK_IMPORTED_MODULE_2__.CartProvider, {\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(Component, {\n            ...pageProps\n        }, void 0, false, {\n            fileName: \"/Users/itsluismario/Documents/CS/FullStack/next-js/pages/_app.tsx\",\n            lineNumber: 10,\n            columnNumber: 17\n        }, this)\n    }, void 0, false, {\n        fileName: \"/Users/itsluismario/Documents/CS/FullStack/next-js/pages/_app.tsx\",\n        lineNumber: 9,\n        columnNumber: 9\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9wYWdlcy9fYXBwLnRzeC5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQ3lDO0FBRUM7QUFFM0IsU0FBU0MsTUFBTSxFQUFFQyxVQUFTLEVBQUVDLFVBQVMsRUFBWSxFQUFFO0lBQzlELHFCQUVJLDhEQUFDSCxxREFBWUE7a0JBQ0wsNEVBQUNFO1lBQVcsR0FBR0MsU0FBUzs7Ozs7Ozs7Ozs7QUFJdEMsQ0FBQyIsInNvdXJjZXMiOlsid2VicGFjazovL25leHQvLi9wYWdlcy9fYXBwLnRzeD8yZmJlIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IEFwcFByb3BzIH0gZnJvbSBcIm5leHQvYXBwXCJcbmltcG9ydCAnc2VtYW50aWMtdWktY3NzL3NlbWFudGljLm1pbi5jc3MnXG5pbXBvcnQgTGF5b3V0IGZyb20gXCJAY29tcG9uZW50cy9MYXlvdXQvTGF5b3V0XCJcbmltcG9ydCB7IENhcnRQcm92aWRlciB9IGZyb20gXCJAc3RvcmUvQ2FydFwiXG5cbmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIE15QXBwKHsgQ29tcG9uZW50LCBwYWdlUHJvcHMgfTogQXBwUHJvcHMpIHtcbiAgICByZXR1cm4gKFxuICAgIFxuICAgICAgICA8Q2FydFByb3ZpZGVyPlxuICAgICAgICAgICAgICAgIDxDb21wb25lbnQgey4uLnBhZ2VQcm9wc30gLz5cbiAgICAgICAgPC9DYXJ0UHJvdmlkZXI+XG4gICAgXG4gICAgKVxuICB9Il0sIm5hbWVzIjpbIkNhcnRQcm92aWRlciIsIk15QXBwIiwiQ29tcG9uZW50IiwicGFnZVByb3BzIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./pages/_app.tsx\n");
 
 /***/ }),
 
-/***/ 8158:
+/***/ "./store/Cart.tsx":
+/*!************************!*\
+  !*** ./store/Cart.tsx ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"CartProvider\": () => (/* binding */ CartProvider),\n/* harmony export */   \"useCart\": () => (/* binding */ useCart),\n/* harmony export */   \"useCartMutations\": () => (/* binding */ useCartMutations)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"react/jsx-dev-runtime\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"react\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n\n\nconst defaultCartState = {};\nconst CartItemsContext = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_1___default().createContext(defaultCartState);\nconst CartDispatchContext = /*#__PURE__*/ react__WEBPACK_IMPORTED_MODULE_1___default().createContext(()=>{});\nconst CartProvider = ({ children  })=>{\n    const [state, dispatch] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useReducer)(cartReducers, defaultCartState);\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(CartItemsContext.Provider, {\n        value: state,\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(CartDispatchContext.Provider, {\n            value: dispatch,\n            children: children\n        }, void 0, false, {\n            fileName: \"/Users/itsluismario/Documents/CS/FullStack/next-js/store/Cart.tsx\",\n            lineNumber: 24,\n            columnNumber: 7\n        }, undefined)\n    }, void 0, false, {\n        fileName: \"/Users/itsluismario/Documents/CS/FullStack/next-js/store/Cart.tsx\",\n        lineNumber: 23,\n        columnNumber: 5\n    }, undefined);\n};\nfunction cartReducers(state, { item , type , quantity: qtyToAdd = 1  }) {\n    const existingCartItem = state[item.id];\n    switch(type){\n        case \"add\":\n            {\n                if (existingCartItem != undefined) {\n                    const quantity = existingCartItem.quantity + qtyToAdd;\n                    return {\n                        ...state,\n                        [item.id]: {\n                            ...existingCartItem,\n                            quantity\n                        }\n                    };\n                }\n                return {\n                    ...state,\n                    [item.id]: {\n                        ...item,\n                        quantity: qtyToAdd\n                    }\n                };\n            }\n        case \"remove\":\n            {\n                if (existingCartItem == undefined) {\n                    return state;\n                }\n                const quantity = existingCartItem.quantity - existingCartItem.quantity;\n                if (quantity > 0) {\n                    return {\n                        ...state,\n                        [item.id]: {\n                            ...existingCartItem,\n                            quantity\n                        }\n                    };\n                }\n                const newCartItems = {\n                    ...state\n                };\n                delete newCartItems[item.id];\n                return newCartItems;\n            }\n        default:\n            {\n                throw new Error(`Unhandled action type: ${type}`);\n            }\n    }\n}\nconst getCartSubTotal = (sum, item)=>{\n    sum += item.price * item.quantity;\n    return sum;\n};\nconst getCartCount = (sum, item)=>sum + item.quantity;\nconst useCart = ()=>{\n    const itemsById = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(CartItemsContext);\n    const items = Object.values(itemsById);\n    // Not familiar with Array.reduce? :)\n    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce\n    const count = items.reduce(getCartCount, 0);\n    const subTotal = items.reduce(getCartSubTotal, 0);\n    return {\n        items,\n        itemsById,\n        count,\n        subTotal\n    };\n};\nconst useCartMutations = ()=>{\n    const dispatch = (0,react__WEBPACK_IMPORTED_MODULE_1__.useContext)(CartDispatchContext);\n    const addToCart = (product, quantity)=>dispatch({\n            type: \"add\",\n            item: product,\n            quantity: quantity\n        });\n    const removeFromCart = (product)=>dispatch({\n            type: \"remove\",\n            item: product\n        });\n    return {\n        addToCart,\n        removeFromCart\n    };\n};\n\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zdG9yZS9DYXJ0LnRzeC5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQUErRDtBQWEvRCxNQUFNRyxtQkFBbUIsQ0FBQztBQUUxQixNQUFNQyxpQ0FBbUJKLDBEQUFtQixDQUFDRztBQUM3QyxNQUFNRyxvQ0FBc0JOLDBEQUFtQixDQUFFLElBQUksQ0FBQztBQUV0RCxNQUFNTyxlQUFlLENBQUMsRUFBRUMsU0FBUSxFQUFpQyxHQUFLO0lBQ3BFLE1BQU0sQ0FBQ0MsT0FBT0MsU0FBUyxHQUFHUixpREFBVUEsQ0FBQ1MsY0FBY1I7SUFFbkQscUJBQ0UsOERBQUNDLGlCQUFpQlEsUUFBUTtRQUFDQyxPQUFPSjtrQkFDaEMsNEVBQUNILG9CQUFvQk0sUUFBUTtZQUFDQyxPQUFPSDtzQkFDbENGOzs7Ozs7Ozs7OztBQUlUO0FBR0EsU0FBU0csYUFDUEYsS0FBZ0IsRUFDaEIsRUFBRUssS0FBSSxFQUFFQyxLQUFJLEVBQUVDLFVBQVVDLFdBQVcsQ0FBQyxHQUFjLEVBQ2xEO0lBQ0EsTUFBTUMsbUJBQW1CVCxLQUFLLENBQUNLLEtBQUtLLEVBQUUsQ0FBQztJQUV2QyxPQUFRSjtRQUNOLEtBQUs7WUFBTztnQkFDVixJQUFJRyxvQkFBb0JFLFdBQVc7b0JBQ2pDLE1BQU1KLFdBQVdFLGlCQUFpQkYsUUFBUSxHQUFHQztvQkFDN0MsT0FBTzt3QkFDTCxHQUFHUixLQUFLO3dCQUNSLENBQUNLLEtBQUtLLEVBQUUsQ0FBQyxFQUFFOzRCQUNULEdBQUdELGdCQUFnQjs0QkFDbkJGO3dCQUNGO29CQUVGO2dCQUNGLENBQUM7Z0JBQ0QsT0FBTztvQkFDTCxHQUFHUCxLQUFLO29CQUNSLENBQUNLLEtBQUtLLEVBQUUsQ0FBQyxFQUFFO3dCQUNULEdBQUdMLElBQUk7d0JBQ1BFLFVBQVVDO29CQUNaO2dCQUNGO1lBQ0Y7UUFFQSxLQUFLO1lBQVU7Z0JBQ2IsSUFBSUMsb0JBQW9CRSxXQUFXO29CQUNqQyxPQUFPWDtnQkFDVCxDQUFDO2dCQUVELE1BQU1PLFdBQVdFLGlCQUFpQkYsUUFBUSxHQUFHRSxpQkFBaUJGLFFBQVE7Z0JBQ3RFLElBQUlBLFdBQVcsR0FBRztvQkFDaEIsT0FBTzt3QkFDTCxHQUFHUCxLQUFLO3dCQUNSLENBQUNLLEtBQUtLLEVBQUUsQ0FBQyxFQUFFOzRCQUNULEdBQUdELGdCQUFnQjs0QkFDbkJGO3dCQUNGO29CQUNGO2dCQUNGLENBQUM7Z0JBRUQsTUFBTUssZUFBZTtvQkFBRSxHQUFHWixLQUFLO2dCQUFDO2dCQUNoQyxPQUFPWSxZQUFZLENBQUNQLEtBQUtLLEVBQUUsQ0FBQztnQkFDNUIsT0FBT0U7WUFDVDtRQUVBO1lBQVM7Z0JBQ1AsTUFBTSxJQUFJQyxNQUFNLENBQUMsdUJBQXVCLEVBQUVQLEtBQUssQ0FBQyxFQUFDO1lBQ25EO0lBQ0Y7QUFDRjtBQUVBLE1BQU1RLGtCQUFrQixDQUFDQyxLQUFhVixPQUF1QjtJQUMzRFUsT0FBT1YsS0FBS1csS0FBSyxHQUFHWCxLQUFLRSxRQUFRO0lBQ2pDLE9BQU9RO0FBQ1Q7QUFFQSxNQUFNRSxlQUFlLENBQUNGLEtBQWFWLE9BQXVCVSxNQUFNVixLQUFLRSxRQUFRO0FBRXRFLE1BQU1XLFVBQVUsSUFBTTtJQUMzQixNQUFNQyxZQUFZM0IsaURBQVVBLENBQUNHO0lBQzdCLE1BQU15QixRQUFRQyxPQUFPQyxNQUFNLENBQUNIO0lBQzVCLHFDQUFxQztJQUNyQyxnR0FBZ0c7SUFDaEcsTUFBTUksUUFBUUgsTUFBTUksTUFBTSxDQUFDUCxjQUFjO0lBQ3pDLE1BQU1RLFdBQVdMLE1BQU1JLE1BQU0sQ0FBQ1YsaUJBQWlCO0lBRS9DLE9BQU87UUFDTE07UUFDQUQ7UUFDQUk7UUFDQUU7SUFDRjtBQUNGLEVBQUM7QUFFTSxNQUFNQyxtQkFBbUIsSUFBTTtJQUNwQyxNQUFNekIsV0FBV1QsaURBQVVBLENBQUNLO0lBRTVCLE1BQU04QixZQUFZLENBQUNDLFNBQW1CckIsV0FFcENOLFNBQVM7WUFDUEssTUFBTTtZQUNORCxNQUFNdUI7WUFDTnJCLFVBQVVBO1FBQ1o7SUFFRixNQUFNc0IsaUJBQWlCLENBQUNELFVBRXRCM0IsU0FBUztZQUNQSyxNQUFNO1lBQ05ELE1BQU11QjtRQUNSO0lBR0YsT0FBTztRQUNMRDtRQUNBRTtJQUNGO0FBQ0YsRUFBQztBQUV1QiIsInNvdXJjZXMiOlsid2VicGFjazovL25leHQvLi9zdG9yZS9DYXJ0LnRzeD82NjQ5Il0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBSZWFjdCwgeyBEaXNwYXRjaCwgdXNlQ29udGV4dCwgdXNlUmVkdWNlciB9IGZyb20gJ3JlYWN0J1xuXG5leHBvcnQgdHlwZSBDYXJ0SXRlbVR5cGUgPSBUUHJvZHVjdCAmIHtxdWFudGl0eTogbnVtYmVyfVxuXG5leHBvcnQgdHlwZSBDYXJ0U3RhdGUgPSB7XG4gIFtrZXk6IHN0cmluZ106IENhcnRJdGVtVHlwZVxufVxuZXhwb3J0IHR5cGUgQ2FydEFjdGlvbiA9IHtcbiAgdHlwZTogJ2FkZCcgfCAncmVtb3ZlJ1xuICBpdGVtOiBUUHJvZHVjdFxuICBxdWFudGl0eT86IG51bWJlclxufVxuXG5jb25zdCBkZWZhdWx0Q2FydFN0YXRlID0ge30gYXMgQ2FydFN0YXRlXG5cbmNvbnN0IENhcnRJdGVtc0NvbnRleHQgPSBSZWFjdC5jcmVhdGVDb250ZXh0KGRlZmF1bHRDYXJ0U3RhdGUpXG5jb25zdCBDYXJ0RGlzcGF0Y2hDb250ZXh0ID0gUmVhY3QuY3JlYXRlQ29udGV4dCgoKCk9Pnt9KSBhcyBEaXNwYXRjaDxDYXJ0QWN0aW9uPilcblxuY29uc3QgQ2FydFByb3ZpZGVyID0gKHsgY2hpbGRyZW4gfTogeyBjaGlsZHJlbjogUmVhY3QuUmVhY3ROb2RlIH0pID0+IHtcbiAgY29uc3QgW3N0YXRlLCBkaXNwYXRjaF0gPSB1c2VSZWR1Y2VyKGNhcnRSZWR1Y2VycywgZGVmYXVsdENhcnRTdGF0ZSlcblxuICByZXR1cm4gKFxuICAgIDxDYXJ0SXRlbXNDb250ZXh0LlByb3ZpZGVyIHZhbHVlPXtzdGF0ZX0+XG4gICAgICA8Q2FydERpc3BhdGNoQ29udGV4dC5Qcm92aWRlciB2YWx1ZT17ZGlzcGF0Y2h9PlxuICAgICAgICB7Y2hpbGRyZW59XG4gICAgICA8L0NhcnREaXNwYXRjaENvbnRleHQuUHJvdmlkZXI+XG4gICAgPC9DYXJ0SXRlbXNDb250ZXh0LlByb3ZpZGVyPlxuICApXG59XG5cblxuZnVuY3Rpb24gY2FydFJlZHVjZXJzKFxuICBzdGF0ZTogQ2FydFN0YXRlLFxuICB7IGl0ZW0sIHR5cGUsIHF1YW50aXR5OiBxdHlUb0FkZCA9IDEgfTogQ2FydEFjdGlvblxuKSB7XG4gIGNvbnN0IGV4aXN0aW5nQ2FydEl0ZW0gPSBzdGF0ZVtpdGVtLmlkXVxuXG4gIHN3aXRjaCAodHlwZSkge1xuICAgIGNhc2UgJ2FkZCc6IHtcbiAgICAgIGlmIChleGlzdGluZ0NhcnRJdGVtICE9IHVuZGVmaW5lZCkge1xuICAgICAgICBjb25zdCBxdWFudGl0eSA9IGV4aXN0aW5nQ2FydEl0ZW0ucXVhbnRpdHkgKyBxdHlUb0FkZFxuICAgICAgICByZXR1cm4ge1xuICAgICAgICAgIC4uLnN0YXRlLFxuICAgICAgICAgIFtpdGVtLmlkXToge1xuICAgICAgICAgICAgLi4uZXhpc3RpbmdDYXJ0SXRlbSxcbiAgICAgICAgICAgIHF1YW50aXR5LFxuICAgICAgICAgIH0sXG4gICAgICAgICAgXG4gICAgICAgIH1cbiAgICAgIH1cbiAgICAgIHJldHVybiB7XG4gICAgICAgIC4uLnN0YXRlLFxuICAgICAgICBbaXRlbS5pZF06IHtcbiAgICAgICAgICAuLi5pdGVtLFxuICAgICAgICAgIHF1YW50aXR5OiBxdHlUb0FkZCxcbiAgICAgICAgfSxcbiAgICAgIH1cbiAgICB9XG5cbiAgICBjYXNlICdyZW1vdmUnOiB7XG4gICAgICBpZiAoZXhpc3RpbmdDYXJ0SXRlbSA9PSB1bmRlZmluZWQpIHtcbiAgICAgICAgcmV0dXJuIHN0YXRlXG4gICAgICB9XG5cbiAgICAgIGNvbnN0IHF1YW50aXR5ID0gZXhpc3RpbmdDYXJ0SXRlbS5xdWFudGl0eSAtIGV4aXN0aW5nQ2FydEl0ZW0ucXVhbnRpdHlcbiAgICAgIGlmIChxdWFudGl0eSA+IDApIHtcbiAgICAgICAgcmV0dXJuIHtcbiAgICAgICAgICAuLi5zdGF0ZSxcbiAgICAgICAgICBbaXRlbS5pZF06IHtcbiAgICAgICAgICAgIC4uLmV4aXN0aW5nQ2FydEl0ZW0sXG4gICAgICAgICAgICBxdWFudGl0eSxcbiAgICAgICAgICB9LFxuICAgICAgICB9XG4gICAgICB9XG5cbiAgICAgIGNvbnN0IG5ld0NhcnRJdGVtcyA9IHsgLi4uc3RhdGUgfVxuICAgICAgZGVsZXRlIG5ld0NhcnRJdGVtc1tpdGVtLmlkXVxuICAgICAgcmV0dXJuIG5ld0NhcnRJdGVtc1xuICAgIH1cblxuICAgIGRlZmF1bHQ6IHtcbiAgICAgIHRocm93IG5ldyBFcnJvcihgVW5oYW5kbGVkIGFjdGlvbiB0eXBlOiAke3R5cGV9YClcbiAgICB9XG4gIH1cbn1cblxuY29uc3QgZ2V0Q2FydFN1YlRvdGFsID0gKHN1bTogbnVtYmVyLCBpdGVtOiBDYXJ0SXRlbVR5cGUpID0+IHtcbiAgc3VtICs9IGl0ZW0ucHJpY2UgKiBpdGVtLnF1YW50aXR5XG4gIHJldHVybiBzdW1cbn1cblxuY29uc3QgZ2V0Q2FydENvdW50ID0gKHN1bTogbnVtYmVyLCBpdGVtOiBDYXJ0SXRlbVR5cGUpID0+IHN1bSArIGl0ZW0ucXVhbnRpdHlcblxuZXhwb3J0IGNvbnN0IHVzZUNhcnQgPSAoKSA9PiB7XG4gIGNvbnN0IGl0ZW1zQnlJZCA9IHVzZUNvbnRleHQoQ2FydEl0ZW1zQ29udGV4dClcbiAgY29uc3QgaXRlbXMgPSBPYmplY3QudmFsdWVzKGl0ZW1zQnlJZClcbiAgLy8gTm90IGZhbWlsaWFyIHdpdGggQXJyYXkucmVkdWNlPyA6KVxuICAvLyBodHRwczovL2RldmVsb3Blci5tb3ppbGxhLm9yZy9lbi1VUy9kb2NzL1dlYi9KYXZhU2NyaXB0L1JlZmVyZW5jZS9HbG9iYWxfT2JqZWN0cy9BcnJheS9SZWR1Y2VcbiAgY29uc3QgY291bnQgPSBpdGVtcy5yZWR1Y2UoZ2V0Q2FydENvdW50LCAwKVxuICBjb25zdCBzdWJUb3RhbCA9IGl0ZW1zLnJlZHVjZShnZXRDYXJ0U3ViVG90YWwsIDApXG5cbiAgcmV0dXJuIHtcbiAgICBpdGVtcyxcbiAgICBpdGVtc0J5SWQsXG4gICAgY291bnQsXG4gICAgc3ViVG90YWwsXG4gIH1cbn1cblxuZXhwb3J0IGNvbnN0IHVzZUNhcnRNdXRhdGlvbnMgPSAoKSA9PiB7XG4gIGNvbnN0IGRpc3BhdGNoID0gdXNlQ29udGV4dChDYXJ0RGlzcGF0Y2hDb250ZXh0KVxuXG4gIGNvbnN0IGFkZFRvQ2FydCA9IChwcm9kdWN0OiBUUHJvZHVjdCwgcXVhbnRpdHk/OiBudW1iZXIpID0+IFxuXG4gICAgZGlzcGF0Y2goe1xuICAgICAgdHlwZTogJ2FkZCcsXG4gICAgICBpdGVtOiBwcm9kdWN0LCBcbiAgICAgIHF1YW50aXR5OiBxdWFudGl0eVxuICAgIH0pXG4gIFxuICBjb25zdCByZW1vdmVGcm9tQ2FydCA9IChwcm9kdWN0OiBUUHJvZHVjdCkgPT4gXG5cbiAgICBkaXNwYXRjaCh7XG4gICAgICB0eXBlOiAncmVtb3ZlJyxcbiAgICAgIGl0ZW06IHByb2R1Y3QsXG4gICAgfSlcbiAgXG4gIFxuICByZXR1cm4ge1xuICAgIGFkZFRvQ2FydCxcbiAgICByZW1vdmVGcm9tQ2FydFxuICB9XG59XG5cbmV4cG9ydCB7IENhcnRQcm92aWRlciB9OyJdLCJuYW1lcyI6WyJSZWFjdCIsInVzZUNvbnRleHQiLCJ1c2VSZWR1Y2VyIiwiZGVmYXVsdENhcnRTdGF0ZSIsIkNhcnRJdGVtc0NvbnRleHQiLCJjcmVhdGVDb250ZXh0IiwiQ2FydERpc3BhdGNoQ29udGV4dCIsIkNhcnRQcm92aWRlciIsImNoaWxkcmVuIiwic3RhdGUiLCJkaXNwYXRjaCIsImNhcnRSZWR1Y2VycyIsIlByb3ZpZGVyIiwidmFsdWUiLCJpdGVtIiwidHlwZSIsInF1YW50aXR5IiwicXR5VG9BZGQiLCJleGlzdGluZ0NhcnRJdGVtIiwiaWQiLCJ1bmRlZmluZWQiLCJuZXdDYXJ0SXRlbXMiLCJFcnJvciIsImdldENhcnRTdWJUb3RhbCIsInN1bSIsInByaWNlIiwiZ2V0Q2FydENvdW50IiwidXNlQ2FydCIsIml0ZW1zQnlJZCIsIml0ZW1zIiwiT2JqZWN0IiwidmFsdWVzIiwiY291bnQiLCJyZWR1Y2UiLCJzdWJUb3RhbCIsInVzZUNhcnRNdXRhdGlvbnMiLCJhZGRUb0NhcnQiLCJwcm9kdWN0IiwicmVtb3ZlRnJvbUNhcnQiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./store/Cart.tsx\n");
+
+/***/ }),
+
+/***/ "./node_modules/semantic-ui-css/semantic.min.css":
+/*!*******************************************************!*\
+  !*** ./node_modules/semantic-ui-css/semantic.min.css ***!
+  \*******************************************************/
 /***/ (() => {
 
 
 
 /***/ }),
 
-/***/ 6689:
+/***/ "react":
+/*!************************!*\
+  !*** external "react" ***!
+  \************************/
 /***/ ((module) => {
 
 "use strict";
@@ -46,11 +55,14 @@ module.exports = require("react");
 
 /***/ }),
 
-/***/ 997:
+/***/ "react/jsx-dev-runtime":
+/*!****************************************!*\
+  !*** external "react/jsx-dev-runtime" ***!
+  \****************************************/
 /***/ ((module) => {
 
 "use strict";
-module.exports = require("react/jsx-runtime");
+module.exports = require("react/jsx-dev-runtime");
 
 /***/ })
 
@@ -61,7 +73,7 @@ module.exports = require("react/jsx-runtime");
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, [324], () => (__webpack_exec__(3847)));
+var __webpack_exports__ = (__webpack_exec__("./pages/_app.tsx"));
 module.exports = __webpack_exports__;
 
 })();
