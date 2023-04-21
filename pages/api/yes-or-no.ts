@@ -6,20 +6,6 @@ type ResponseData = {
     error: null,
   }
 
-// const yesOrNo = async (req: NextApiRequest, res: NextApiResponse<ResponseData>
-//     )  => {
-    
-//     await enablePublicAccess(req, res)
-//     const answer = Math.round(Math.random()) ? 'yes' : 'no'
-  
-//     res.status(200).json({ 
-//       data: answer, 
-//       error: null, 
-//     })
-//   }
-
-//  export default yesOrNo;
-
 var express = require('express')
 var cors = require('cors')
 var app = express()
@@ -32,13 +18,12 @@ const corsOptions ={
 
 app.use(cors(corsOptions))
 
-const yesOrNo = app.get('/api/yes-or-no', function (req: NextApiRequest, res: NextApiResponse, next: any) {
+const yesOrNo = app.get('/api/yes-or-no', function (req: NextApiRequest, res: NextApiResponse<ResponseData>, next: any) {
   const answer = Math.round(Math.random()) ? 'yes' : 'no'
       res.status(200).json({ 
       data: answer, 
       error: null, 
     })
 })
-
 
 export default yesOrNo;
