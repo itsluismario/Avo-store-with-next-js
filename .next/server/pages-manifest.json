@@ -1,9 +1,14 @@
 {
   "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/api/yes-or-no": "pages/api/yes-or-no.js",
+  "/about": "pages/about.html",
+  "/api/avo/[id]": "pages/api/avo/[id].js",
   "/api/avo": "pages/api/avo.js",
+  "/api/yes-or-no": "pages/api/yes-or-no.js",
+  "/cart": "pages/cart.html",
+  "/product/[id]": "pages/product/[id].html",
+  "/_error": "pages/_error.js",
+  "/": "pages/index.js",
   "/yes-or-no": "pages/yes-or-no.js",
-  "/": "pages/index.js"
+  "/404": "pages/404.html"
 }
